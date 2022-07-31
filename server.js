@@ -30,7 +30,7 @@ app.use(express.json())
 app.use(cors)
 
 // allows server to serve up our index.ejs file
-app.get('/', async (req, res) => {
+app.get('/', async (request, response) => {
     // try-catch block says to try this, or if that fails display the catch error message
     try {
         // send a response to request by rendering index.ejs file and display it
